@@ -1,3 +1,4 @@
+# Concepts of JavaScript to remember
 ## 001: About context and `this`
 *(This is part of my personal learning diary. Feel free to learn with me, commit your suggestions and corrections. Looking forward to this.)*
 
@@ -103,7 +104,7 @@ class Controller {
         this.model.bindOnAddData(this.onAddData)
     }
 
-    onAddData = (data) => {
+    onAddData = (data) => {****
         this.view.doSomething(data) // connection to the view
     }
 }
