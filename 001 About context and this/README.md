@@ -1,6 +1,5 @@
 ##### Part of: [Concepts of JavaScript to remember](../README.md)
 ## 001: About context and `this`
-***
 
 *(This is part of my [personal learning diary](../README.md). Feel free to learn with me, commit your suggestions and corrections. Looking forward to this.)*
 
