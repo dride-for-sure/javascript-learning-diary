@@ -1,4 +1,5 @@
-![GNU GENERAL PUBLIC LICENSE Version 3](https://img.shields.io/cran/l/devtools)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+![ECMAScript >= 2016](https://img.shields.io/badge/-JavaScript-blue?logo=javascript&style=flat)
 
 # Concepts of JavaScript to remember
 
