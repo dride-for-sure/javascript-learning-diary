@@ -28,6 +28,7 @@ This is my personal JavaScript learning diary. Feel free to learn with me, commi
   - [Airbnb` is more than couchsurfing](#airbnb-is-more-than-couchsurfing)
   - [`Lint` the babelfish](#lint-the-babelfish)
   - [Build` without rocket science](#build-without-rocket-science)
+  - [Use git!](#use-git)
   - [Release your horse: `Deploy` it!](#release-your-horse-deploy-it)
 
 Happy coding :rocket:
@@ -238,6 +239,11 @@ The controller constructor binds his `onAddData` method to the `onAddData` metho
 //...
 ```
 ## Build` without rocket science
+***
+```
+//...
+```
+## Use git!
 ***
 ```
 //...
