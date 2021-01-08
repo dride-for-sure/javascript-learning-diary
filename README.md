@@ -7,24 +7,28 @@ This is my personal JavaScript learning diary. Feel free to learn with me, commi
 
 ### Content in the making:
 
-1. [`const` > `let` > `var`](#001)
-2. [`Arrows` are for fun](#002)
-3. [Some `functions` think they are better](#003)
-4. [Business as usual: `Arrays`](#004)
-5. [Watch out, there is `Scope`](#005)
-6. [`Closures` are closed source](#006)
-7. [Construction site: `Classes`](#007)
-8. [`Polymorphism` or `inherting` the right `prototype`](#008)
-9. [About context and `this`](#009)
-10. [Separate with `Encapsulation`](#010)
-11. [Do not accidently `destructure` yourself](#011)
-12. [Try to hold your `async` / `await` `promises`](#012)
-13. [Do not `try` to `catch` it!](#013)
-14. [`Refactoring` or die trying](#014)
-15. [`Airbnb` is more than couchsurfing](#015)
-16. [`Lint` the babelfish](#016)
-17. [`Build` without rocket science](#017)
-18. [Release your horse: `Deploy` it!](#018)
+  - [`const` > `let` > `var`](#const--let--var)
+  - [`Arrows` are for fun](#arrows-are-for-fun)
+  - [Some `functions` think they are better](#some-functions-think-they-are-better)
+  - [Business as usual: `Arrays`](#business-as-usual-arrays)
+  - [Watch out, there is `Scope`](#watch-out-there-is-scope)
+  - [Closures` are closed source](#closures-are-closed-source)
+  - [Construction site: `Classes`](#construction-site-classes)
+  - [`Polymorphism` or `inherting` the right `prototype`](#polymorphism-or-inherting-the-right-prototype)
+  - [About context and `this`](#about-context-and-this)
+      - [Scope vs context](#scope-vs-context)
+      - [Global context](#global-context)
+      - [The more context, the better...](#the-more-context-the-better)
+      - [Arrow functions to the rescue!](#arrow-functions-to-the-rescue)
+  - [Separate with `Encapsulation`](#separate-with-encapsulation)
+  - [Do not accidently `destructure` yourself](#do-not-accidently-destructure-yourself)
+  - [Try to hold your async/await promises](#try-to-hold-your-asyncawait-promises)
+  - [Do not try, catch it!](#do-not-try-catch-it)
+  - [`Refactoring` or die trying](#refactoring-or-die-trying)
+  - [Airbnb` is more than couchsurfing](#airbnb-is-more-than-couchsurfing)
+  - [`Lint` the babelfish](#lint-the-babelfish)
+  - [Build` without rocket science](#build-without-rocket-science)
+  - [Release your horse: `Deploy` it!](#release-your-horse-deploy-it)
 
 Happy coding :rocket:
 
@@ -34,55 +38,56 @@ Happy coding :rocket:
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 ***
-## <a id="001"></a>`const` > `let` > `var`
+## `const` > `let` > `var`
 ```
 //...
 ```
 ***
-## <a id="002"></a>`Arrows` are for fun
+## `Arrows` are for fun
 ```
 //...
 ```
 ***
-## <a id="003"></a>Some `functions` think they are better
+## Some `functions` think they are better
 ```
 //...
 ```
 ***
-## <a id="004"></a>Business as usual: `Arrays`
+## </a>Business as usual: `Arrays`
 ```
 //...
 ```
 ***
-## <a id="005"></a>Watch out, there is `Scope`
+## </a>Watch out, there is `Scope`
 ```
 //...
 ```
 ***
-## <a id="006"></a>Closures` are closed source
+## </a>Closures` are closed source
 ```
 //...
 ```
 ***
-## <a id="007"></a>Construction site: `Classes`
+## </a>Construction site: `Classes`
 ```
 //...
 ```
 ***
-## <a id="008"></a>`Polymorphism` or `inherting` the right `prototype`
+## </a>`Polymorphism` or `inherting` the right `prototype`
 ```
 //...
 ```
 ***
-## <a id="009"></a>About context and `this`
-#### Scope vs context
-Imagine a tree diagram. We have one **global scope** at the top and lots of **local scopes** underneath. As usual within a tree diagram local scope nodes could be nested. Visibility of elements is given vertically up the ladder back to the global scope. 
+## </a>About context and `this`
+### Scope vs context
+Imagine a tree diagram. We have one **global scope** at the top and lots of nested **local scopes** underneath. Visibility of elements is given vertically up the ladder back to the global scope. 
 
-This means that:
-- a variable existing in a local scope of a function **could not be accessed from outside** and nothing could get messed up
-- the **namespace is not polluted**, cause an variable declared inside is not visible from the outside
+This means that for a variable in a local scope of a function:
+- It could **not be accessed from outside**
+- It could be **accessed from the local scopes underneath in the same nest**
+- The **global namespace is not polluted**
 
-In contrast: The **context** is where an element belongs to. A function / class / object (everything is an object!) gets declared or initialized somewhere. With the help of `this` you could refer to this context.
+In contrast to the scope the **context** is where an element belongs to. A function / class / object, which are objects under the hood, is declared or initialized at some point somewhere. This is the associated context. With the help of `this` you could refer to this context (Be aware of [`arrow functions`](#arrow-functions-to-the-rescue)).
 
 #### Global context
 
@@ -197,44 +202,44 @@ class Model {
 ```
 The controller constructor binds his `onAddData` method to the `onAddData` method of the model, so that the controller will be informed when the model invokes `onAddData`. The controllers `onAddData` method needs to be an arrow function to preserve the "controller" context when it is invoked in the context of `onAddData` on the model.
 ***
-## <a id="010"></a>Separate with `Encapsulation`
+## Separate with `Encapsulation`
 ***
 ```
 //...
 ```
-## <a id="011"></a>Do not accidently `destructure` yourself
+## Do not accidently `destructure` yourself
 ***
 ```
 //...
 ```
-## <a id="012"></a>Try to hold your async/await promises
+## Try to hold your async/await promises
 ***
 ```
 //...
 ```
-## <a id="013"></a>Do not try, catch it!
+## Do not try, catch it!
 ***
 ```
 //...
 ```
-## <a id="014"></a>`Refactoring` or die trying
+## `Refactoring` or die trying
 ***
 ```
 //...
 ```
-## <a id="014"></a>Airbnb` is more than couchsurfing
+## Airbnb` is more than couchsurfing
 ***
 ```
 //...
 ```
-## <a id="014"></a>`Lint` the babelfish
+## `Lint` the babelfish
 ***
 ```
 //...
 ```
-## <a id="014"></a>Build` without rocket science
+## Build` without rocket science
 ***
 ```
 //...
 ```
-## <a id="014"></a>Release your horse: `Deploy` it!
+## Release your horse: `Deploy` it!
