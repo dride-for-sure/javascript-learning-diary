@@ -106,7 +106,7 @@ class Controller {
         this.model.bindOnAddData(this.onAddData)
     }
 
-    onAddData = (data) => {****
+    onAddData = (data) => {
         this.view.doSomething(data) // connection to the view
     }
 }
@@ -132,4 +132,5 @@ class Model {
 ```
 The controller constructor binds his `onAddData` method to the `onAddData` method of the model, so that the controller will be informed when the model invokes `onAddData`. The controllers `onAddData` method needs to be an arrow function to preserve the "controller" context when it is invoked in the context of `onAddData` on the model.
 
-Puh. Happy coding.
+##### *Phew! Happy coding.*
+
