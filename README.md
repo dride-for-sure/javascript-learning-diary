@@ -7,13 +7,14 @@ This is my personal JavaScript learning diary. Feel free to learn with me, commi
 
 ### Content
 
-- **001** [About context and `this`](/001%20About%20context%20and%20this/README.md)
+- [**001** About context and `this`](/001%20About%20context%20and%20this/README.md)
 - **002** Inherting the right `prototype`
-- **003** Refactoring or die trying
-- **004** Airbnb is more than couchsurfing
-- **005** Do not destructure yourself
-- **006** Lint the babelfish
-- **007** Build with rocket science
-- **008** Release your horse: Deploy it!
+- **003** `Refactoring` or die trying
+- **004** `Airbnb` is more than couchsurfing
+- **005** Do not `destructure` yourself
+- **006** `Lint` the babelfish
+- **007** `Build` without rocket science
+- **008** Release your horse: `Deploy` it!
+- **009** `S(A/C)SS` it
 
 Happy coding :rocket:
